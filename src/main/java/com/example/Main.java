@@ -19,6 +19,6 @@ public class Main {
         LogManager.getLogger(Main.class.getName()).info("Log4j Hello world!!!");
 
         LoggerFactory.getLogger(Main.class).info("SLF4J Hello world!!!");
-
+        LoggerFactory.getLogger(Main.class).info("Parametrized string {} {}", "param1", 123456789);
     }
 }
