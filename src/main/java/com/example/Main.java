@@ -2,15 +2,15 @@ package com.example;
 
 import org.apache.logging.log4j.LogManager;
 import org.slf4j.LoggerFactory;
-//import org.slf4j.bridge.SLF4JBridgeHandler;
+import org.slf4j.bridge.SLF4JBridgeHandler;
 
 import java.util.logging.Logger;
 
 public class Main {
     public static void main(String[] args) {
         //JUL to SLF4J
-//        SLF4JBridgeHandler.removeHandlersForRootLogger();
-//        SLF4JBridgeHandler.install();
+        SLF4JBridgeHandler.removeHandlersForRootLogger();
+        SLF4JBridgeHandler.install();
 
         System.out.println("Hello, World!");
 
